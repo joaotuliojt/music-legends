@@ -1,0 +1,23 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs'
+import { Profile } from './index.tsx'
+
+<Meta title="Components/Profile" component={Profile} />
+
+# Profile
+
+Profile
+
+<ArgsTable of={Profile} />
+
+<Canvas>
+  <Story
+    name="Profile Component"
+    args={{
+      ...Profile.defaultProps,
+      profile_url: '',
+      name: 'Jhon Doe'
+    }}
+  >
+    {(args) => <Profile {...args} />}
+  </Story>
+</Canvas>
