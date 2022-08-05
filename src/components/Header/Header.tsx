@@ -12,6 +12,7 @@ export function Header() {
       top={0}
       left={0}
       as="header"
+      zIndex={10}
     >
       <Container
         maxW="container.xl"
