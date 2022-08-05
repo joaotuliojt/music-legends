@@ -1,9 +1,9 @@
-import { Heading } from '@chakra-ui/react'
+import { Header } from './components/Header/Header'
 
 function App() {
   return (
     <>
-      <Heading>RIOT GAMES</Heading>
+      <Header />
     </>
   )
 }
