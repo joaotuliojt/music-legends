@@ -21,6 +21,9 @@ const GlobalStyles = () => (
         font-weight: 400;
         src: url('../assets/font/GTEestiProDisplay-Regular.ttf') format('ttf');
       }
+      body{
+        overflow: hidden;
+      }
       `}
   />
 )

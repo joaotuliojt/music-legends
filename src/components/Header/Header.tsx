@@ -24,7 +24,7 @@ export function Header() {
       >
         <Nav />
         <Heading color={'white'}>MUSIC LEGENDS</Heading>
-        <Profile name="Joao Túlio" userImageUrl="" />
+        <Profile name="Joao Túlio" />
       </Container>
     </Box>
   )

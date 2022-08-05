@@ -1,4 +1,5 @@
 import { Header } from './components/Header/Header'
+import { Player } from './components/Player/Player'
 import { Main } from './container/Main/Main'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Header />
       <Main />
+      <Player />
     </>
   )
 }
