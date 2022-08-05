@@ -1,5 +1,5 @@
 import { Box, Button, Flex, Image, Text } from '@chakra-ui/react'
-
+import { motion } from 'framer-motion'
 export function Main() {
   return (
     <Box
@@ -11,8 +11,19 @@ export function Main() {
       position={'relative'}
     >
       <Box position={'absolute'} bottom={'14.25rem'} left={'15rem'}>
-        <Image src="./assets/logo-lol.svg" w={'15rem'} />
+        <motion.div
+          animate={{ x: [-100, 0], opacity: [0, 1] }}
+          transition={{ duration: 1.2 }}
+        >
+          <Image src="./assets/logo-lol.svg" w={'15rem'} />
+        </motion.div>
         <Text
+          as={motion.p}
+          animate={{
+            x: [-100, 0],
+            opacity: [0, 1],
+            transition: { duration: 1.2 },
+          }}
           color={'gray'}
           fontWeight={500}
           marginTop="1.5rem"
@@ -22,6 +33,12 @@ export function Main() {
           RIOT GAMES
         </Text>
         <Flex
+          as={motion.div}
+          animate={{
+            x: [-100, 0],
+            opacity: [0, 1],
+            transition: { duration: 1.2 },
+          }}
           alignItems={'center'}
           gap="4"
           color={'gray'}
